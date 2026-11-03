@@ -1640,14 +1640,19 @@ button.rarity.is-active{
         top: calc(100% + 10px);
         left: 0;
         right: 0;
-        z-index: 10;
+
         flex-direction: column;
         align-items: stretch;
         padding: 12px;
         border-radius: 24px;
         background: var(--windsor-blue);
         border: 1px solid var(--border);
+        z-index: 999;
     }
+    header{
+        z-index: 9;
+    }
+
     .menu-open .menu{
         display: flex;
     }
@@ -1699,7 +1704,9 @@ button.rarity.is-active{
     .user__profile span{
         display: none;
     }
+    /* panda moves under the text, so the fixed desktop height has to go */
     .hero__banner{
+        height: auto;
         padding-bottom: 300px;
     }
     .hero__panda{
@@ -1726,6 +1733,11 @@ button.rarity.is-active{
     .filter__search{
         flex-basis: 100%;
     }
+    /* frame art is a fixed 1206px image: stretch it to the narrower stage */
+    .opencase .opencase__frame,
+    .opencase .opencase__frame:after{
+        background-size: 100% 100%;
+    }
 }
 @media (max-width: 600px){
     .header-top__info{
@@ -1737,6 +1749,7 @@ button.rarity.is-active{
     .header-primary{
         height: 72px;
         padding: 0 12px 0 18px;
+        margin: 0 10px;
     }
     .nav{
         gap: 10px;
@@ -1751,6 +1764,10 @@ button.rarity.is-active{
         width: 42px;
         padding: 0;
         font-size: 0;
+
+    }
+    .user__deposit img{
+        margin-left: -6px;
     }
     .user__balance{
         padding-right: 12px;
@@ -1790,13 +1807,15 @@ button.rarity.is-active{
         min-height: 0;
         padding: 0 12px 14px;
         border-radius: 16px;
+        background-size: 100% 100%;
     }
     .case__img{
-        height: 150px;
-        margin-top: -10px;
+        height: auto;
+        margin-top: 10px;
     }
     .case__name{
         font-size: 15px;
+        margin-top: 0;
     }
     .case__bottom{
         flex-direction: column;
@@ -1806,6 +1825,8 @@ button.rarity.is-active{
     .price{
         height: 30px;
         font-size: 12px;
+        width: 100%;
+        justify-content: center;
     }
     .price img{
         width: 22px;
@@ -1814,7 +1835,9 @@ button.rarity.is-active{
         height: 190px;
         padding: 20px;
     }
+    /* card is too narrow to keep the art beside the label: keep the label on top */
     .stat__label{
+        z-index: 3;
         font-size: 30px;
         max-width: 230px;
     }
@@ -1824,20 +1847,18 @@ button.rarity.is-active{
     .footer__grid{
         grid-template-columns: 1fr;
     }
-    .opencase__title{
-        font-size: 44px;
-    }
     .opencase__stage{
-        padding: 0;
+        padding: 0 16px;
     }
     .opencase__frame{
-        height: 260px;
+        height: 240px;
     }
     .opencase__case > img{
         height: 190px;
     }
     .opencase__title{
-        font-size: 36px;
+        gap: 10px;
+        font-size: 32px;
     }
     .opencase__price{
         right: 0;
@@ -1868,4 +1889,8 @@ button.rarity.is-active{
     .footer__bottom > *:after{
         display: none;
     }
+    .drops__inner{
+        flex-direction: column;
+    }
 }
+
