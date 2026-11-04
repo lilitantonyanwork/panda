@@ -23,7 +23,15 @@
                 </div>
                 <div class="header-top__actions df a-center">
                     <button class="btn btn__music">Sound On</button>
-                    <button class="btn btn__lang">Rus</button>
+                    <div class="dropdown dropdown--lang">
+                        <button class="btn btn__lang" aria-haspopup="true" aria-expanded="false">Rus</button>
+                        <ul class="dropdown__menu">
+                            <li><button class="dropdown__item is-active" data-lang="Rus">Русский</button></li>
+                            <li><button class="dropdown__item" data-lang="Eng">English</button></li>
+                            <li><button class="dropdown__item" data-lang="Esp">Español</button></li>
+                            <li><button class="dropdown__item" data-lang="Deu">Deutsch</button></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

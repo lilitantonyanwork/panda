@@ -1894,3 +1894,244 @@ button.rarity.is-active{
     }
 }
 
+
+/* ---------- dropdowns ---------- */
+header{
+    z-index: 9;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown__menu{
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    z-index: 20;
+    min-width: 180px;
+    padding: 8px;
+    list-style: none;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    background: rgba(12, 19, 38, .96);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .45), 0 0 0 1px rgba(155, 92, 255, .08);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity .2s, transform .2s, visibility .2s;
+}
+.dropdown.is-open .dropdown__menu{
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+.dropdown__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #A9B6D6;
+    text-align: left;
+    white-space: nowrap;
+    transition: background .2s, color .2s;
+}
+.dropdown__item img{
+    width: 16px;
+    opacity: .8;
+}
+.dropdown__item:hover{
+    background: var(--dark-sapphire);
+    color: var(--white);
+}
+.dropdown__item.is-active{
+    color: var(--white);
+    background: linear-gradient(180deg, rgba(153, 58, 255, .35) -36%, rgba(61, 0, 114, .35) 119%);
+}
+.dropdown__item--danger{
+    color: #FF6B6B;
+}
+.dropdown__item--danger:hover{
+    color: #FF8A8A;
+    background: rgba(255, 60, 70, .12);
+}
+.dropdown__sep{
+    height: 1px;
+    margin: 6px 4px;
+    background: var(--border);
+}
+.dropdown__head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px 12px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+}
+.dropdown__head small{
+    display: block;
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--navy);
+}
+.dropdown__head .user__avatar{
+    width: 36px;
+    height: 36px;
+}
+.dropdown--lang .dropdown__menu{
+    min-width: 150px;
+}
+.btn__lang:before{
+    transition: transform .2s;
+}
+.dropdown.is-open .btn__lang:before{
+    transform: translateY(-50%) rotate(180deg);
+}
+button.user__profile{
+    border: 0;
+}
+.user__profile img:last-child{
+    transition: transform .2s;
+}
+.dropdown.is-open .user__profile img:last-child{
+    transform: rotate(180deg);
+}
+
+/* ---------- hovers ---------- */
+.btn--primary{
+    transition: filter .2s, transform .2s, box-shadow .2s;
+}
+.btn--primary:active{
+    transform: translateY(0) scale(.97);
+}
+.user__pill,
+.burger,
+.btn__music,
+.btn__lang,
+.drop,
+.drop img,
+.stat,
+.stat__img,
+.footer__card,
+.socials a,
+button.rarity,
+.filter__price-field,
+.open-panel__count-btn,
+.menu__link img{
+    transition: transform .25s, background .2s, border-color .2s, box-shadow .25s, filter .2s;
+}
+.drop{ --drop-glow: 155, 92, 255; }
+.drop--purple-light{ --drop-glow: 157, 61, 255; }
+.drop--grey{ --drop-glow: 142, 152, 181; }
+.drop--blue{ --drop-glow: 61, 123, 255; }
+/* .drops clips overflow: room below the strip for the hover shadow */
+.drops__list{
+    padding-bottom: 16px;
+    margin-bottom: -16px;
+}
+.case{
+    --case-glow: 155, 92, 255;
+    transition: transform .25s, box-shadow .3s;
+}
+.case--dragon,
+.case--nightmare{ --case-glow: 255, 60, 70; }
+.case--nefrit{ --case-glow: 60, 220, 140; }
+.case-fishing{ --case-glow: 40, 190, 230; }
+.case--dumplings,
+.case--hommade{ --case-glow: 255, 170, 60; }
+/* thin border and a faint glow along the bottom edge, shown on hover */
+.case:after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    border-radius: inherit;
+    box-shadow:
+        inset 0 0 0 1px rgba(var(--case-glow), .45),
+        inset 0 -50px 50px -40px rgba(var(--case-glow), .45);
+    opacity: 0;
+    transition: opacity .3s;
+    pointer-events: none;
+}
+.case .price{
+    transition: filter .2s, box-shadow .25s;
+}
+
+@media (hover: hover){
+    .btn--primary:hover{
+        filter: brightness(1.12);
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px 4px rgba(102, 0, 255, .6);
+    }
+    .menu__link:hover{
+        border-color: rgba(155, 92, 255, .3);
+    }
+    .menu__link:hover img{
+        transform: scale(1.15);
+    }
+    .menu__link--active:hover{
+        filter: brightness(1.12);
+    }
+    .user__pill:hover,
+    .dropdown.is-open .user__pill{
+        background: #1A2850;
+        box-shadow: inset 0 0 0 1px rgba(155, 92, 255, .35);
+    }
+    .burger:hover{
+        background: #1A2850;
+    }
+    .btn__music:hover,
+    .btn__lang:hover{
+        filter: brightness(1.4);
+    }
+    .drop:hover{
+        transform: translateY(-4px);
+        filter: brightness(1.12);
+        box-shadow: 0 10px 20px -8px rgba(var(--drop-glow), .65);
+    }
+    .drop:hover img{
+        transform: scale(1.08) rotate(-3deg);
+    }
+    .case:hover{
+        box-shadow: 0 18px 34px -16px rgba(var(--case-glow), .7);
+    }
+    .case:hover:after{
+        opacity: 1;
+    }
+    .case:hover .price{
+        filter: brightness(1.15);
+        box-shadow: 0 0 16px 3px #6600FFA6;
+    }
+    .stat:hover{
+        transform: translateY(-4px);
+        box-shadow: 0 16px 30px -16px rgba(155, 92, 255, .55);
+    }
+    .stat__img{
+        transform-origin: right bottom;
+    }
+    .stat:hover .stat__img{
+        transform: scale(1.04);
+    }
+    .footer__card:hover{
+        transform: translateY(-3px);
+        box-shadow: inset 0 0 0 1px rgba(155, 92, 255, .25);
+    }
+    .socials a:hover{
+        transform: translateY(-2px) scale(1.08);
+    }
+    button.rarity:hover{
+        background: #142046;
+        border-color: rgba(155, 92, 255, .35);
+    }
+    .filter__price-field:hover{
+        box-shadow: inset 0 0 0 1px rgba(155, 92, 255, .3);
+    }
+    .open-panel__count-btn:hover{
+        transform: translateY(-2px);
+    }
+}

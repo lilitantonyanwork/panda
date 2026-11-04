@@ -37,6 +37,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // dropdowns: toggle on click, close on outside click or Esc
+    const dropdowns = document.querySelectorAll('.dropdown');
+    const closeAll = except => dropdowns.forEach(d => {
+        if (d === except) return;
+        d.classList.remove('is-open');
+        d.querySelector('[aria-expanded]').setAttribute('aria-expanded', 'false');
+    });
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('[aria-expanded]');
+        toggle.addEventListener('click', e => {
+            e.stopPropagation();
+            closeAll(dropdown);
+            const open = dropdown.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+    });
+    document.addEventListener('click', e => {
+        if (!e.target.closest('.dropdown__menu')) closeAll();
+    });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeAll();
+    });
+
+    const lang = document.querySelector('.dropdown--lang');
+    if (lang) {
+        const items = lang.querySelectorAll('[data-lang]');
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                items.forEach(i => i.classList.remove('is-active'));
+                item.classList.add('is-active');
+                lang.querySelector('.btn__lang').textContent = item.dataset.lang;
+                closeAll();
+            });
+        });
+    }
+
     // case page: open button price follows the chosen count
     const openBtn = document.querySelector('.open-panel__open');
     if (openBtn) {

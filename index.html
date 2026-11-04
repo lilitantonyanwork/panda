@@ -23,7 +23,15 @@
                 </div>
                 <div class="header-top__actions df a-center">
                     <button class="btn btn__music">Sound On</button>
-                    <button class="btn btn__lang">Rus</button>
+                    <div class="dropdown dropdown--lang">
+                        <button class="btn btn__lang" aria-haspopup="true" aria-expanded="false">Rus</button>
+                        <ul class="dropdown__menu">
+                            <li><button class="dropdown__item is-active" data-lang="Rus">Русский</button></li>
+                            <li><button class="dropdown__item" data-lang="Eng">English</button></li>
+                            <li><button class="dropdown__item" data-lang="Esp">Español</button></li>
+                            <li><button class="dropdown__item" data-lang="Deu">Deutsch</button></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,11 +55,25 @@
                 <a href="#" class="user__pill user__items"><img src="images/image%202.webp" alt="">230 шт</a>
                 <a href="#" class="user__pill user__balance"><img src="images/image%2011353.webp" alt="CR">150</a>
                 <a href="#" class="btn btn--primary user__deposit">пополнить <img src="images/wifi_add.svg" alt=""></a>
-                <a href="#" class="user__pill user__profile">
-                    <img class="user__avatar" src="images/Mask%20group.webp" alt="">
-                    <span>John D</span>
-                    <img src="images/Vector%20147.svg" alt="">
-                </a>
+                <div class="dropdown dropdown--profile">
+                    <button class="user__pill user__profile" aria-haspopup="true" aria-expanded="false">
+                        <img class="user__avatar" src="images/Mask%20group.webp" alt="">
+                        <span>John D</span>
+                        <img src="images/Vector%20147.svg" alt="">
+                    </button>
+                    <div class="dropdown__menu">
+                        <div class="dropdown__head">
+                            <img class="user__avatar" src="images/Mask%20group.webp" alt="">
+                            <div>John D<small>Баланс: 150 CR</small></div>
+                        </div>
+                        <a href="#" class="dropdown__item"><img src="images/view_cozy.svg" alt="">Инвентарь</a>
+                        <a href="#" class="dropdown__item"><img src="images/refresh.svg" alt="">История</a>
+                        <a href="#" class="dropdown__item"><img src="images/wifi_add.svg" alt="">Пополнить</a>
+                        <a href="#" class="dropdown__item"><img src="images/support.svg" alt="">Поддержка</a>
+                        <div class="dropdown__sep"></div>
+                        <a href="#" class="dropdown__item dropdown__item--danger">Выйти</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>
