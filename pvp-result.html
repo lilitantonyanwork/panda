@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Итоги PvP — PandaGun</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__content df a-center">
+                <div class="header-top__info df a-center">
+                    <span>2,060 Online</span>
+                    <span>6,510,473 Users</span>
+                    <span>115,269,972 Battles</span>
+                    <span>142,862,143 Upgrades</span>
+                    <span>771,855,365 Cases</span>
+                </div>
+                <div class="header-top__actions df a-center">
+                    <button class="btn btn__music">Sound On</button>
+                    <div class="dropdown dropdown--lang">
+                        <button class="btn btn__lang" aria-haspopup="true" aria-expanded="false">Rus</button>
+                        <ul class="dropdown__menu">
+                            <li><button class="dropdown__item is-active" data-lang="Rus">Русский</button></li>
+                            <li><button class="dropdown__item" data-lang="Eng">English</button></li>
+                            <li><button class="dropdown__item" data-lang="Esp">Español</button></li>
+                            <li><button class="dropdown__item" data-lang="Deu">Deutsch</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-primary df a-center">
+        <nav class="nav df a-center">
+            <a href="#" class="header__logo">
+                <img src="images/logo.svg" alt="PandaGun">
+            </a>
+            <button class="burger" aria-label="Меню"><span></span></button>
+            <ul class="menu df a-center">
+                <li><a href="index.html" class="menu__link"><img src="images/view_cozy.svg" alt="">Кейсы</a></li>
+                <li><a href="upgrade.html" class="menu__link"><img src="images/bolt_boost.svg" alt="">Апгрейд</a></li>
+                <li><a href="contracts.html" class="menu__link"><img src="images/contract.svg" alt="">Контракты</a></li>
+                <li><a href="pvp.html" class="menu__link menu__link--active"><img src="images/swords.svg" alt="">PvP</a></li>
+                <li><a href="exchange.html" class="menu__link"><img src="images/swap_horiz.svg" alt="">Обмен</a></li>
+                <li><a href="bonus.html" class="menu__link"><img src="images/Union.svg" alt="">Бонусы</a></li>
+                <li><a href="daily.html" class="menu__link"><img src="images/event.svg" alt="">Ежедневные</a></li>
+            </ul>
+            <div class="user df a-center">
+                <a href="#" class="user__pill user__items"><img src="images/image%202.webp" alt="">230 шт</a>
+                <a href="#" class="user__pill user__balance"><img src="images/image%2011353.webp" alt="CR">150</a>
+                <a href="profile.html#deposit" class="btn btn--primary user__deposit">пополнить <img src="images/wifi_add.svg" alt=""></a>
+                <div class="dropdown dropdown--profile">
+                    <button class="user__pill user__profile" aria-haspopup="true" aria-expanded="false">
+                        <img class="user__avatar" src="images/Mask%20group.webp" alt="">
+                        <span>John D</span>
+                        <img src="images/Vector%20147.svg" alt="">
+                    </button>
+                    <div class="dropdown__menu">
+                        <div class="dropdown__head">
+                            <img class="user__avatar" src="images/Mask%20group.webp" alt="">
+                            <div>John D<small>Баланс: 150 CR</small></div>
+                        </div>
+                        <a href="profile.html" class="dropdown__item"><img src="images/view_cozy.svg" alt="">Инвентарь</a>
+                        <a href="profile.html" class="dropdown__item"><img src="images/refresh.svg" alt="">История</a>
+                        <a href="profile.html#deposit" class="dropdown__item"><img src="images/wifi_add.svg" alt="">Пополнить</a>
+                        <a href="#" class="dropdown__item"><img src="images/support.svg" alt="">Поддержка</a>
+                        <div class="dropdown__sep"></div>
+                        <a href="#" class="dropdown__item dropdown__item--danger">Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="drops">
+        <div class="drops__inner df">
+            <div class="drops__group drops__group--top">
+                <div class="drops__label"><span class="drops__crown"></span>Топ дроп</div>
+                <div class="drops__list df">
+                    <div class="drop drop--purple">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/11.png" alt="">
+                        <span class="drop__price">34 <span>CR</span></span>
+                    </div>
+                    <div class="drop drop--purple drop--purple-light">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/12.png" alt="">
+                        <span class="drop__price">400 <span>CR</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="drops__group drops__group--live">
+                <div class="drops__label drops__label--live"><span class="drops__live"></span>Live дроп</div>
+                <div class="drops__list df">
+                    <div class="drop drop--grey">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/123.png" alt="">
+                        <span class="drop__price">34 <span>CR</span></span>
+                    </div>
+                    <div class="drop drop--blue">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/12.png" alt="">
+                        <span class="drop__price">12 <span>CR</span></span>
+                    </div>
+                    <div class="drop drop--purple">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/12.png" alt="">
+                        <span class="drop__price">42 <span>CR</span></span>
+                    </div>
+                    <div class="drop drop--purple  drop--purple-light">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/12.png" alt="">
+                        <span class="drop__price">400 <span>CR</span></span>
+                    </div>
+                    <div class="drop drop--grey">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/12.png" alt="">
+                        <span class="drop__price">400 <span>CR</span></span>
+                    </div>
+                    <div class="drop drop--blue">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/12.png" alt="">
+                        <span class="drop__price">12 <span>CR</span></span>
+                    </div>
+                    <div class="drop drop--purple">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/12.png" alt="">
+                        <span class="drop__price">400 <span>CR</span></span>
+                    </div>
+                    <div class="drop drop--grey">
+                        <span class="drop__type">USP - S</span>
+                        <span class="drop__name">MAC-10</span>
+                        <img src="images/12.png" alt="">
+                        <span class="drop__price">34 <span>CR</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pvp-result">
+        <div class="container">
+            <div class="result__top">
+                <a href="pvp.html" class="spin__back"><img src="images/arrow_left_alt.svg" alt="">Назад</a>
+                <h1 class="result__title"><img src="images/swords.svg" alt="" class="pvp-result__icon">Итоги PvP</h1>
+                <div class="result__actions df a-center">
+                    <a href="pvp-room.html" class="btn btn--primary result__again">Играть заново</a>
+                </div>
+            </div>
+            <div class="champion">
+                <div class="champion__badge">
+                    <svg class="champion__avatar" viewBox="150 60 300 300" role="img" aria-label="John D">
+                        <!-- winner shield from the design, avatar inside -->
+                        <g transform="translate(150 60)" fill="none">
+                        <path d="M214.335 129.584L214.342 129.583L214.363 129.581L214.446 129.574L214.773 129.544L216.036 129.43C217.137 129.328 218.744 129.178 220.762 128.983C224.799 128.594 230.485 128.027 237.082 127.314C249.74 125.946 265.764 124.039 279.934 121.825C275.748 132.943 270.663 142.645 264.993 151.11C251.049 152.101 226.551 153.107 206.483 150.173L206.09 152.243L206.109 152.248L206.165 152.26L206.386 152.312L207.247 152.512C208.002 152.686 209.108 152.939 210.519 153.257C213.339 153.893 217.374 154.789 222.235 155.827C231.514 157.808 243.809 160.307 256.41 162.508C246.833 173.843 236.238 182.41 225.795 188.878C215.523 185.445 200.454 179.612 188.898 171.83L187.537 173.422L187.547 173.433L187.575 173.464L187.687 173.584L188.121 174.048C188.501 174.452 189.054 175.042 189.754 175.782C191.153 177.262 193.135 179.345 195.468 181.758C199.823 186.26 205.408 191.919 210.715 196.952C199.411 202.141 189.088 205.061 181.5 206.69C177.551 207.538 174.345 208.035 172.131 208.32C171.174 208.443 170.402 208.527 169.836 208.582V155.495V152.84L168.015 154.771L149.374 174.538L131.235 155.297L129.414 153.365V156.021V208.58C128.848 208.525 128.077 208.441 127.12 208.316C124.906 208.03 121.701 207.53 117.75 206.681C110.163 205.05 99.841 202.129 88.5378 196.952C93.8448 191.929 99.4285 186.271 103.782 181.767C106.116 179.352 108.098 177.267 109.497 175.785C110.196 175.044 110.751 174.454 111.129 174.048L111.564 173.583L111.675 173.463L111.704 173.432L111.711 173.425L110.352 171.83C98.7963 179.612 83.7273 185.445 73.455 188.878C63.0108 182.409 52.3946 173.842 42.8387 162.509C55.4403 160.308 67.7355 157.808 77.0155 155.827C81.8763 154.789 85.912 153.893 88.732 153.257C90.142 152.939 91.249 152.686 92.0028 152.512L92.8645 152.312L93.0858 152.26L93.1413 152.248L93.1563 152.244L92.7685 150.173C72.6997 153.084 48.2 152.077 34.2544 151.109C28.5659 142.669 23.5008 132.947 19.3163 121.825C33.486 124.039 49.5106 125.946 62.1682 127.314C68.7652 128.027 74.4511 128.594 78.4878 128.983C80.5068 129.178 82.1125 129.328 83.215 129.43L84.478 129.544L84.8043 129.574L84.8875 129.581L84.9085 129.583L85.0083 128.533L84.916 129.584L85.2115 127.499C48.0391 120.196 25.8219 111.412 14.2007 105.737C11.5286 95.6278 9.55692 84.5121 8.46875 72.3096C8.6639 72.3719 8.87735 72.4396 9.1091 72.5125C10.5358 72.9612 12.6534 73.6046 15.4263 74.3865C20.972 75.9501 29.1389 78.0688 39.6409 80.2911C60.6445 84.7371 90.991 89.6023 128.389 91.2906L128.872 91.3123L129.204 90.9613L149.326 69.6406L169.449 90.9846L169.779 91.3356L170.262 91.3146C207.804 89.6983 238.277 84.8271 259.371 80.3571C269.918 78.1221 278.12 75.9876 283.691 74.4101C286.477 73.6214 288.604 72.972 290.037 72.519C290.312 72.4322 290.561 72.3526 290.784 72.2807C289.697 84.4956 287.724 95.6203 285.049 105.738C273.43 111.435 251.214 120.196 214.038 127.499L214.335 129.584Z" fill="url(#paint0_linear_366_13118)"/>
+                        <path d="M214.335 129.584L214.242 128.533M187.537 173.422L188.898 171.83C200.454 179.612 215.523 185.445 225.795 188.878C236.238 182.41 246.834 173.843 256.41 162.508C243.809 160.307 231.514 157.808 222.235 155.827C217.374 154.789 213.339 153.893 210.519 153.257C209.108 152.939 208.002 152.686 207.247 152.512L206.386 152.312L206.165 152.26L206.109 152.248L206.09 152.243L206.483 150.173C226.551 153.107 251.049 152.101 264.993 151.11C270.663 142.645 275.748 132.943 279.934 121.825C265.764 124.039 249.74 125.946 237.082 127.314C230.485 128.027 224.799 128.594 220.762 128.983C218.744 129.178 217.137 129.328 216.036 129.43L214.773 129.544L214.446 129.574L214.363 129.581L214.342 129.583L214.335 129.584L214.038 127.499C251.214 120.196 273.43 111.435 285.049 105.738C287.724 95.6203 289.697 84.4956 290.784 72.2807C290.561 72.3526 290.312 72.4322 290.037 72.519C288.604 72.972 286.477 73.6214 283.691 74.4101C278.12 75.9876 269.918 78.1221 259.371 80.3571C238.277 84.8271 207.804 89.6983 170.262 91.3146L169.779 91.3356L169.449 90.9846L149.326 69.6406L129.204 90.9613L128.872 91.3123L128.389 91.2906C90.991 89.6023 60.6445 84.7371 39.6409 80.2911C29.1389 78.0688 20.972 75.9501 15.4263 74.3865C12.6534 73.6046 10.5358 72.9612 9.1091 72.5125C8.87735 72.4396 8.6639 72.3719 8.46875 72.3096C9.55692 84.5121 11.5286 95.6278 14.2007 105.737C25.8219 111.412 48.0391 120.196 85.2115 127.499L84.916 129.584L85.0083 128.533L84.9085 129.583L84.8875 129.581L84.8043 129.574L84.478 129.544L83.215 129.43C82.1125 129.328 80.5068 129.178 78.4878 128.983C74.4511 128.594 68.7652 128.027 62.1682 127.314C49.5105 125.946 33.486 124.039 19.3163 121.825C23.5008 132.947 28.5659 142.669 34.2544 151.109C48.2 152.077 72.6997 153.084 92.7685 150.173L93.1563 152.244L93.1413 152.248L93.0858 152.26L92.8645 152.312L92.0028 152.512C91.249 152.686 90.142 152.939 88.732 153.257C85.912 153.893 81.8763 154.789 77.0155 155.827C67.7356 157.808 55.4403 160.308 42.8387 162.509C52.3946 173.842 63.0108 182.409 73.455 188.878C83.7273 185.445 98.7963 179.612 110.352 171.83L111.711 173.425L111.704 173.432L111.675 173.463L111.564 173.583L111.129 174.048C110.751 174.454 110.196 175.044 109.497 175.785C108.098 177.267 106.116 179.352 103.782 181.767C99.4285 186.271 93.8448 191.929 88.5378 196.952C99.841 202.129 110.163 205.05 117.75 206.681C121.701 207.53 124.906 208.03 127.12 208.316C128.077 208.441 128.848 208.525 129.414 208.58V156.021V153.365L131.235 155.297L149.374 174.538L168.015 154.771L169.836 152.84V155.495V208.582C170.402 208.527 171.174 208.443 172.131 208.32C174.345 208.035 177.551 207.538 181.5 206.69C189.088 205.061 199.411 202.141 210.715 196.952C205.408 191.919 199.823 186.26 195.468 181.758C193.135 179.345 191.153 177.262 189.754 175.782C189.054 175.042 188.501 174.452 188.121 174.048L187.687 173.584L187.575 173.464L187.547 173.433L187.537 173.422ZM206.09 152.243L206.331 151.216M187.537 173.422L188.309 172.705M111.711 173.425L110.941 172.705M93.1563 152.244L92.92 151.216" stroke-width="0.281162" stroke="url(#paint1_linear_366_13118)"/>
+                        <path d="M68.3906 92.7716C114.56 72.8499 141.902 49.3523 149.801 40.0938C157.701 49.3523 185.042 72.8499 231.212 92.7716V157.901C231.212 174.183 221.864 212.495 184.472 235.482L149.801 256.792L115.13 235.482C77.7383 212.495 68.3906 174.183 68.3906 157.901V92.7716Z" fill="black"/>
+                        <clipPath id="champ-clip"><path d="M68.3906 92.7716C114.56 72.8499 141.902 49.3523 149.801 40.0938C157.701 49.3523 185.042 72.8499 231.212 92.7716V157.901C231.212 174.183 221.864 212.495 184.472 235.482L149.801 256.792L115.13 235.482C77.7383 212.495 68.3906 174.183 68.3906 157.901V92.7716Z"/></clipPath><image href="images/Mask%20group.webp" x="68" y="40" width="164" height="217" preserveAspectRatio="xMidYMid slice" clip-path="url(#champ-clip)"/>
+                        <g filter="url(#filter0_d_366_13118)">
+                        <path d="M149.414 27.4609C140.623 37.9108 110.194 63.1688 58.8125 85.6542V159.163C58.8125 177.54 69.2157 220.781 110.829 246.726L149.414 269.094L187.999 246.726C229.612 220.781 240.015 177.54 240.015 159.163V85.6542C188.634 63.1688 158.206 37.9108 149.414 27.4609ZM149.414 48.0003C142.092 56.6834 116.748 77.4582 73.9534 96.1414V157.224C73.9534 172.494 82.6183 208.424 117.277 229.983L149.414 248.285L181.551 229.983C216.209 208.424 224.874 172.494 224.874 157.224V96.1414C182.079 77.4582 156.736 56.6834 149.414 48.0003Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint2_linear_366_13118)"/>
+                        <path d="M111.052 246.366L149.414 268.605L187.781 246.362C229.234 220.514 239.593 177.433 239.593 159.161V85.9274C188.934 63.72 158.646 38.825 149.414 28.1094C140.182 38.825 109.894 63.72 59.2344 85.9274V159.161C59.2344 177.433 69.5992 220.518 111.052 246.366ZM187.781 246.362C187.78 246.364 187.783 246.361 187.781 246.362ZM111.052 246.366C111.05 246.364 111.054 246.367 111.052 246.366ZM73.7848 95.7532L73.5318 95.8634V96.1394V157.222C73.5318 172.596 82.2404 208.684 117.055 230.338L117.068 230.347L149.205 248.649L149.414 248.768L149.623 248.649L181.759 230.347L181.774 230.338C216.587 208.684 225.296 172.596 225.296 157.222V96.1394V95.8634L225.043 95.7532C182.284 77.0849 157.003 56.3434 149.736 47.7264L149.414 47.344L149.092 47.7264C141.825 56.3434 116.544 77.0849 73.7848 95.7532Z" stroke-width="0.112465" stroke="url(#paint3_linear_366_13118)"/>
+                        </g>
+                        <path d="M53.4336 82.4971C106.668 59.3386 139.029 32.2541 149.808 20.2812C160.586 32.2541 192.948 59.3386 246.182 82.4971V159.977C246.182 179.228 235.105 224.823 190.716 252.175L149.808 277.379L108.9 252.175C64.5108 224.823 53.4336 179.228 53.4336 159.977V82.4971ZM67.8541 91.5211L67.0261 91.8781V92.7796V157.909C67.0261 174.538 76.5214 213.36 114.419 236.657L149.09 257.969L149.808 258.41L150.525 257.969L185.196 236.657C223.094 213.36 232.59 174.538 232.59 157.909V92.7796V91.8781L231.762 91.5211C185.74 71.6628 158.586 48.2773 150.851 39.2119L149.808 37.9894L148.764 39.2119C141.03 48.2773 113.876 71.6628 67.8541 91.5211Z" fill="url(#paint4_linear_366_13118)"/>
+                        <path d="M185.196 236.657L150.525 257.969L149.808 258.41L149.09 257.969L114.419 236.657C76.5214 213.36 67.0261 174.538 67.0261 157.909V92.7796V91.8781L67.8541 91.5211C113.876 71.6628 141.03 48.2773 148.764 39.2119L149.808 37.9894L150.851 39.2119C158.586 48.2773 185.74 71.6628 231.762 91.5211L232.59 91.8781V92.7796V157.909C232.59 174.538 223.094 213.36 185.196 236.657ZM114.419 236.657L115.108 235.537M185.196 236.657L184.506 235.534M53.4336 82.4971C106.668 59.3386 139.029 32.2541 149.808 20.2812C160.586 32.2541 192.948 59.3386 246.182 82.4971V159.977C246.182 179.228 235.105 224.823 190.716 252.175L149.808 277.379L108.9 252.175C64.5108 224.823 53.4336 179.228 53.4336 159.977V82.4971Z" stroke-width="0.365635" stroke="url(#paint5_linear_366_13118)"/>
+                        <path d="M149.805 278.97L191.433 253.324C236.327 225.66 247.55 179.554 247.55 159.958V81.5781L231.216 92.7614V157.891C231.216 174.172 221.868 212.484 184.476 235.471L149.805 256.781V278.97Z" fill="url(#paint6_linear_366_13118)"/>
+                        <path d="M176.37 261.554C168.632 266.313 159.512 272.499 150.476 280.987C142.072 273.148 133.11 267.378 125.306 262.778C123.31 261.602 121.388 260.502 119.572 259.463C119.451 259.394 119.331 259.326 119.211 259.257C117.528 258.294 115.94 257.387 114.464 256.518C112.25 255.215 110.315 254.013 108.719 252.871C136.132 251.988 147.381 236.133 150.483 227.594C153.6 235.993 164.843 251.146 192.134 252.027C190.692 253.01 188.948 254.078 186.941 255.269C186.03 255.81 185.066 256.376 184.055 256.968C181.714 258.341 179.126 259.86 176.37 261.554Z" fill="url(#paint7_linear_366_13118)" stroke-width="0.224929" stroke="url(#paint8_linear_366_13118)"/>
+                        <g filter="url(#filter1_d_366_13118)">
+                        <path d="M149.214 246.918C149.572 246.287 149.75 245.971 149.984 245.866C150.188 245.774 150.422 245.774 150.627 245.866C150.861 245.971 151.04 246.287 151.397 246.918L153.947 251.427C154.05 251.61 154.102 251.702 154.172 251.774C154.235 251.838 154.309 251.892 154.389 251.931C154.48 251.976 154.583 251.997 154.79 252.038L159.873 253.06C160.588 253.204 160.946 253.276 161.119 253.467C161.27 253.633 161.342 253.856 161.318 254.079C161.289 254.335 161.042 254.603 160.547 255.139L157.043 258.939C156.899 259.095 156.827 259.172 156.78 259.262C156.738 259.341 156.71 259.428 156.697 259.517C156.683 259.618 156.695 259.723 156.719 259.933L157.314 265.064C157.398 265.786 157.439 266.148 157.312 266.37C157.201 266.565 157.012 266.703 156.792 266.749C156.541 266.802 156.21 266.651 155.549 266.349L150.826 264.195C150.635 264.108 150.539 264.064 150.439 264.047C150.351 264.031 150.26 264.031 150.172 264.047C150.073 264.064 149.977 264.108 149.786 264.195L145.063 266.349C144.401 266.651 144.071 266.802 143.819 266.749C143.6 266.703 143.411 266.565 143.299 266.37C143.171 266.148 143.213 265.786 143.297 265.064L143.892 259.933C143.917 259.723 143.929 259.618 143.915 259.517C143.901 259.428 143.873 259.341 143.831 259.262C143.783 259.172 143.712 259.095 143.568 258.939L140.063 255.139C139.569 254.603 139.322 254.335 139.294 254.079C139.269 253.856 139.342 253.633 139.493 253.467C139.666 253.276 140.023 253.204 140.738 253.06L145.821 252.038C146.027 251.997 146.131 251.976 146.222 251.931C146.303 251.892 146.376 251.838 146.438 251.774C146.51 251.702 146.561 251.61 146.665 251.427L149.214 246.918Z" fill="url(#paint9_linear_366_13118)"/>
+                        <path d="M151.055 247.11L153.604 251.618L153.621 251.649C153.708 251.802 153.783 251.936 153.891 252.046C153.984 252.142 154.095 252.223 154.215 252.282C154.353 252.349 154.505 252.379 154.677 252.414L154.712 252.421L159.795 253.443C160.16 253.516 160.407 253.567 160.586 253.62C160.767 253.674 160.815 253.714 160.827 253.729C160.903 253.812 160.939 253.924 160.927 254.035C160.925 254.054 160.911 254.114 160.795 254.265C160.681 254.413 160.511 254.599 160.258 254.872L156.753 258.672L156.729 258.698C156.61 258.828 156.504 258.941 156.432 259.078C156.369 259.197 156.327 259.327 156.308 259.46C156.286 259.612 156.304 259.766 156.324 259.941L156.329 259.977L156.924 265.108C156.966 265.477 156.995 265.726 156.999 265.912C157.004 266.101 156.98 266.158 156.971 266.175C156.915 266.272 156.821 266.341 156.711 266.365C156.692 266.368 156.63 266.374 156.452 266.311C156.276 266.249 156.048 266.146 155.71 265.992L150.987 263.837L150.954 263.822C150.795 263.749 150.655 263.686 150.504 263.659C150.372 263.637 150.237 263.637 150.104 263.659C149.953 263.686 149.813 263.749 149.655 263.822L149.622 263.837L144.899 265.992C144.561 266.146 144.333 266.249 144.156 266.311C143.979 266.374 143.916 266.368 143.898 266.365C143.788 266.341 143.694 266.272 143.638 266.175C143.628 266.158 143.605 266.101 143.61 265.912C143.614 265.726 143.643 265.477 143.685 265.108L144.28 259.977L144.285 259.941C144.305 259.766 144.323 259.612 144.301 259.46C144.282 259.327 144.24 259.197 144.176 259.078C144.104 258.941 143.999 258.828 143.88 258.698L143.855 258.672L140.35 254.872C140.098 254.599 139.927 254.413 139.814 254.265C139.698 254.114 139.684 254.054 139.682 254.035C139.67 253.924 139.706 253.812 139.782 253.729C139.794 253.714 139.841 253.674 140.023 253.62C140.202 253.567 140.449 253.516 140.814 253.443L145.897 252.421L145.932 252.414C146.104 252.379 146.256 252.349 146.393 252.282C146.514 252.223 146.624 252.142 146.718 252.046C146.825 251.936 146.901 251.802 146.987 251.649L147.005 251.618L149.554 247.11C149.736 246.787 149.86 246.569 149.966 246.417C150.074 246.262 150.126 246.229 150.144 246.222C150.246 246.176 150.363 246.176 150.465 246.222C150.483 246.229 150.535 246.262 150.642 246.417C150.748 246.569 150.872 246.787 151.055 247.11Z" stroke-width="0.104467" stroke-linecap="round" stroke-linejoin="round" stroke="url(#paint10_linear_366_13118)"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_366_13118" x="57.238" y="25.8864" width="184.352" height="244.782" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset/>
+                        <feGaussianBlur stdDeviation="0.787252"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.0246638 0 0 0 0 0.00527778 0 0 0 0.8 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_366_13118"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_366_13118" result="shape"/>
+                        </filter>
+                        <filter id="filter1_d_366_13118" x="139.105" y="245.665" width="22.4033" height="21.329" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="0.0522336"/>
+                        <feGaussianBlur stdDeviation="0.092026"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.195833 0 0 0 0 0.195833 0 0 0 0 0.195833 0 0 0 0.9 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_366_13118"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_366_13118" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_366_13118" x1="149.625" y1="32.8534" x2="149.625" y2="199.625" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFF2D7"/>
+                        <stop offset="1" stop-color="#F7A92C"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_366_13118" x1="149.793" y1="96.5421" x2="149.793" y2="70.8103" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.05"/>
+                        <stop offset="1" stop-color="white"/>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_366_13118" x1="145.828" y1="290.355" x2="145.828" y2="42.4434" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#221707"/>
+                        <stop offset="0.542293" stop-color="#9A6E2B"/>
+                        <stop offset="1" stop-color="#160F05"/>
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_366_13118" x1="66.8122" y1="249.362" x2="284.848" y2="169.938" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.08"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0.01"/>
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_366_13118" x1="74.8043" y1="-19.725" x2="247.668" y2="216.404" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFF2D7"/>
+                        <stop offset="1" stop-color="#F7A92C"/>
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_366_13118" x1="149.923" y1="66.5073" x2="149.923" y2="18.2015" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.05"/>
+                        <stop offset="1" stop-color="white"/>
+                        </linearGradient>
+                        <linearGradient id="paint6_linear_366_13118" x1="253.959" y1="99.2181" x2="157.602" y2="95.1029" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F7A92C"/>
+                        <stop offset="1" stop-color="#FFF2D7"/>
+                        </linearGradient>
+                        <linearGradient id="paint7_linear_366_13118" x1="149.102" y1="270.92" x2="149.102" y2="223.373" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F7A62C"/>
+                        <stop offset="1" stop-color="#FFF2D7"/>
+                        </linearGradient>
+                        <linearGradient id="paint8_linear_366_13118" x1="150.477" y1="260.354" x2="150.477" y2="211.486" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.05"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0.38"/>
+                        </linearGradient>
+                        <linearGradient id="paint9_linear_366_13118" x1="139.516" y1="268.059" x2="154.166" y2="248.901" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFE4AF"/>
+                        <stop offset="1" stop-color="#FFF6E9"/>
+                        </linearGradient>
+                        <linearGradient id="paint10_linear_366_13118" x1="150.304" y1="244.987" x2="150.304" y2="269.623" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.17"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0"/>
+                        </linearGradient>
+                        </defs>
+                        </g>
+                    </svg>
+                </div>
+                <p class="champion__name">John D <span>— победитель</span></p>
+                <div class="champion__profit">
+                    <img src="images/image%2011353.webp" alt="CR">
+                    <div><b>12 432 CR</b><small>Общая прибыль</small></div>
+                </div>
+            </div>
+            <h2 class="contents__title pvp-result__title">Выигранные предметы</h2>
+            <div class="contents__grid">
+                <div class="drop drop--purple drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/1111.png" alt="">
+                    <span class="drop__price">34 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--purple-light drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/2222.png" alt="">
+                    <span class="drop__price">400 <span>CR</span></span>
+                </div>
+                <div class="drop drop--grey drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/333.png" alt="">
+                    <span class="drop__price">34 <span>CR</span></span>
+                </div>
+                <div class="drop drop--blue drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/2222.png" alt="">
+                    <span class="drop__price">12 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/333.png" alt="">
+                    <span class="drop__price">42 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--purple-light drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/2222.png" alt="">
+                    <span class="drop__price">400 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/1111.png" alt="">
+                    <span class="drop__price">34 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--purple-light drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/2222.png" alt="">
+                    <span class="drop__price">400 <span>CR</span></span>
+                </div>
+                <div class="drop drop--grey drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/333.png" alt="">
+                    <span class="drop__price">34 <span>CR</span></span>
+                </div>
+                <div class="drop drop--blue drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/2222.png" alt="">
+                    <span class="drop__price">12 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/333.png" alt="">
+                    <span class="drop__price">42 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--purple-light drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/2222.png" alt="">
+                    <span class="drop__price">400 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/1111.png" alt="">
+                    <span class="drop__price">34 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--purple-light drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/2222.png" alt="">
+                    <span class="drop__price">400 <span>CR</span></span>
+                </div>
+                <div class="drop drop--grey drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/333.png" alt="">
+                    <span class="drop__price">34 <span>CR</span></span>
+                </div>
+                <div class="drop drop--blue drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/2222.png" alt="">
+                    <span class="drop__price">12 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/333.png" alt="">
+                    <span class="drop__price">42 <span>CR</span></span>
+                </div>
+                <div class="drop drop--purple drop--purple-light drop--lg">
+                    <span class="drop__type">USP - S</span>
+                    <span class="drop__name">MAC-10</span>
+                    <img src="images/2222.png" alt="">
+                    <span class="drop__price">400 <span>CR</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat stat--purple">
+                    <span class="stat__label">Игр сыграно</span>
+                    <span class="stat__value">99</span>
+                    <img class="stat__img" src="images/game.svg" alt="">
+                </div>
+                <div class="stat stat--blue">
+                    <span class="stat__label">Выиграно всего</span>
+                    <span class="stat__value">5,450 000</span>
+                    <img class="stat__img" src="images/win.svg" alt="">
+                </div>
+                <div class="stat stat--teal">
+                    <span class="stat__label">Сейчас онлайн</span>
+                    <span class="stat__value">203</span>
+                    <img class="stat__img" src="images/online.svg" alt="">
+                </div>
+                <div class="stat stat--pink">
+                    <span class="stat__label">Кейсов открыто</span>
+                    <span class="stat__value">100,000</span>
+                    <img class="stat__img" src="images/case.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__card footer__about">
+                <a href="#" class="footer__logo df a-center">
+                    <img src="images/logo.svg" alt="">
+                    <span>
+                        <b>PandaGun</b>
+                        <small>Краткая подпись под логотипом</small>
+                    </span>
+                </a>
+                <p class="footer__legal">
+                    ОГРН: 1205000004931<br>
+                    ИНН: 5032318652<br>
+                    Адрес: Россия, Московская область,<br>Тураевская улица, дом 23
+                </p>
+            </div>
+            <div class="footer__card">
+                <h4 class="footer__title">Основные разделы</h4>
+                <ul class="footer__links footer__links--cols">
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <mask id="mask0_300_1673" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                            <rect width="16" height="16" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_300_1673)">
+                            <path d="M3.33333 7C2.96667 7 2.65278 6.86944 2.39167 6.60833C2.13056 6.34722 2 6.03333 2 5.66667V3.33333C2 2.96667 2.13056 2.65278 2.39167 2.39167C2.65278 2.13056 2.96667 2 3.33333 2H5.66667C6.03333 2 6.34722 2.13056 6.60833 2.39167C6.86944 2.65278 7 2.96667 7 3.33333V5.66667C7 6.03333 6.86944 6.34722 6.60833 6.60833C6.34722 6.86944 6.03333 7 5.66667 7H3.33333ZM3.33333 14C2.96667 14 2.65278 13.8694 2.39167 13.6083C2.13056 13.3472 2 13.0333 2 12.6667V10.3333C2 9.96667 2.13056 9.65278 2.39167 9.39167C2.65278 9.13056 2.96667 9 3.33333 9H5.66667C6.03333 9 6.34722 9.13056 6.60833 9.39167C6.86944 9.65278 7 9.96667 7 10.3333V12.6667C7 13.0333 6.86944 13.3472 6.60833 13.6083C6.34722 13.8694 6.03333 14 5.66667 14H3.33333ZM10.3333 7C9.96667 7 9.65278 6.86944 9.39167 6.60833C9.13056 6.34722 9 6.03333 9 5.66667V3.33333C9 2.96667 9.13056 2.65278 9.39167 2.39167C9.65278 2.13056 9.96667 2 10.3333 2H12.6667C13.0333 2 13.3472 2.13056 13.6083 2.39167C13.8694 2.65278 14 2.96667 14 3.33333V5.66667C14 6.03333 13.8694 6.34722 13.6083 6.60833C13.3472 6.86944 13.0333 7 12.6667 7H10.3333ZM10.3333 14C9.96667 14 9.65278 13.8694 9.39167 13.6083C9.13056 13.3472 9 13.0333 9 12.6667V10.3333C9 9.96667 9.13056 9.65278 9.39167 9.39167C9.65278 9.13056 9.96667 9 10.3333 9H12.6667C13.0333 9 13.3472 9.13056 13.6083 9.39167C13.8694 9.65278 14 9.96667 14 10.3333V12.6667C14 13.0333 13.8694 13.3472 13.6083 13.6083C13.3472 13.8694 13.0333 14 12.6667 14H10.3333Z" fill="white"/>
+                        </g>
+                    </svg>Кейсы</a></li>
+                    <li><a href="#">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_300_1663" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                                <rect width="16" height="16" fill="url(#paint0_linear_300_1663)"/>
+                            </mask>
+                            <g mask="url(#mask0_300_1663)">
+                                <path d="M4.66536 13.3337L1.33203 10.0003L4.66536 6.66699L5.5987 7.61699L3.88203 9.33366H8.66536V10.667H3.88203L5.5987 12.3837L4.66536 13.3337ZM11.332 9.33366L10.3987 8.38366L12.1154 6.66699H7.33203V5.33366H12.1154L10.3987 3.61699L11.332 2.66699L14.6654 6.00033L11.332 9.33366Z" fill="url(#paint1_linear_300_1663)"/>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_300_1663" x1="0" y1="27.4104" x2="0" y2="-6.14967" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_300_1663" x1="1.33203" y1="20.9406" x2="1.33203" y2="-1.43279" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        Обмен</a></li>
+                    <li><a href="#">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_300_1678" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                                <rect width="16" height="16" fill="url(#paint0_linear_300_1678)"/>
+                            </mask>
+                            <g mask="url(#mask0_300_1678)">
+                                <path d="M8.66536 14L9.33203 9.33333H5.31536L10.6654 2H11.332L10.6654 6.66667H14.682L9.33203 14H8.66536ZM1.9987 12V10.6667H7.7987L7.5987 12H1.9987ZM1.33203 8.66667V7.33333H5.13203L4.16536 8.66667H1.33203ZM2.66536 5.33333V4H7.56536L6.5987 5.33333H2.66536Z" fill="url(#paint1_linear_300_1678)"/>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_300_1678" x1="0" y1="27.4104" x2="0" y2="-6.14967" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_300_1678" x1="1.33203" y1="22.5578" x2="1.33203" y2="-2.61225" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        Апгрейд</a></li>
+                    <li><a href="#">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.22861 7.22272C1.47086 7.20617 1.83162 7.2165 2.08213 7.21648L3.64611 7.21653L4.86996 7.21677C5.1142 7.21681 5.38795 7.20222 5.62924 7.24191C5.66761 7.24822 5.68414 7.27501 5.70301 7.30621C5.72916 7.34942 5.73516 7.40698 5.73731 7.45642C5.73987 7.85513 5.73876 8.25585 5.7388 8.65444L5.73885 11.0156L5.7388 12.1633C5.73879 12.342 5.7513 12.7872 5.71178 12.9367C5.62229 13.0231 5.35673 12.9966 5.22734 12.9948L2.57679 12.9947L1.78404 12.9952C1.52966 12.9957 1.16496 13.0301 0.952774 12.8823C0.822582 12.7916 0.734302 12.6525 0.707926 12.4961C0.685247 12.3555 0.693077 11.9563 0.693103 11.7994L0.693301 10.5283L0.692905 8.74481C0.692892 8.42415 0.686441 8.10406 0.702621 7.78386C0.718218 7.47491 0.930406 7.27178 1.22861 7.22272ZM6.9042 7.22312C7.16563 7.20497 7.53152 7.21656 7.80348 7.21668L9.42695 7.21672L10.633 7.21638C10.8465 7.2164 11.0795 7.20814 11.29 7.22664C11.5535 7.2498 11.7829 7.50374 11.7948 7.76447C11.8103 8.10119 11.8053 8.43414 11.8051 8.76995L11.8054 10.5857L11.8055 11.826C11.8055 11.9845 11.8032 12.147 11.8038 12.3052C11.8045 12.5656 11.747 12.7284 11.5348 12.8891C11.5017 12.9108 11.4663 12.9289 11.4294 12.9433C11.2377 13.0192 10.6495 12.9952 10.4104 12.9951L9.03685 12.994L7.70894 12.9953C7.52555 12.9955 6.93218 13.0159 6.79712 12.956C6.74001 12.8267 6.76053 12.1011 6.76053 11.9044L6.76078 10.3134L6.76043 8.50983C6.76018 8.15852 6.73593 7.65458 6.79608 7.30422C6.80166 7.27192 6.87348 7.23649 6.9042 7.22312ZM11.3506 3.41624C11.7804 3.41554 12.4038 3.33531 12.4842 3.95472C12.518 4.21517 12.4906 4.53934 12.4914 4.80909L12.4945 5.53496C12.4962 5.90998 12.5415 6.1945 12.2047 6.4383C11.9524 6.57222 11.6389 6.53395 11.3565 6.53393L10.2043 6.53324L8.11278 6.53388C7.74639 6.53399 7.37811 6.53695 7.01312 6.53056C6.86438 6.52796 6.77767 6.50317 6.76688 6.34892C6.75622 6.19464 6.76015 6.03448 6.76053 5.88109L6.76182 5.0813L6.75979 4.14176C6.75928 3.97441 6.7546 3.80391 6.76247 3.63704C6.7697 3.48549 6.81579 3.43221 6.96186 3.41827C7.33382 3.40982 7.72904 3.41701 8.10316 3.41713L10.3035 3.41778L11.3506 3.41624ZM4.92603 3.41674C5.10513 3.41666 5.49538 3.40279 5.65031 3.44861C5.67645 3.47086 5.71942 3.51991 5.722 3.55242C5.75341 4.08533 5.74013 4.46247 5.7388 5.01804C5.73805 5.3358 5.76481 6.15162 5.70405 6.46711C5.68664 6.55752 5.22522 6.53483 5.08491 6.53329L2.0337 6.53398L1.10755 6.53393C0.627282 6.53377 0.0427354 6.59547 0.00877557 5.91227C-0.0145378 5.44291 0.0173773 4.95943 0.00515663 4.48968C-0.00896855 3.94659 -0.0229339 3.45585 0.659491 3.41812L4.0089 3.41728L4.92603 3.41674ZM2.7207 0.0161182C3.46408 -0.0859052 4.35603 0.314715 4.96831 0.701437C5.33709 0.934356 5.93597 1.35264 6.03298 1.79446C6.0675 1.95936 6.03389 2.13123 5.93983 2.27102C5.70453 2.62814 5.14842 2.78116 4.74751 2.86041C4.65116 2.88102 4.554 2.89776 4.45631 2.91058C3.67617 3.01924 2.6694 3.01439 1.9983 2.52816C1.3528 2.06046 1.37623 1.08763 1.82449 0.489159C2.03933 0.202318 2.36579 0.058533 2.7207 0.0161182ZM9.32036 0.0164653C9.82495 -0.0357399 10.3426 0.0593944 10.6748 0.47265C10.9228 0.780878 11.0491 1.25617 11.0081 1.64608C10.9744 1.98748 10.8026 2.30029 10.5327 2.512C9.93789 2.98755 8.92846 3.01281 8.20038 2.92729C7.03204 2.83908 5.63722 2.16759 7.07047 1.03329C7.67825 0.552274 8.53771 0.0955558 9.32036 0.0164653ZM10.0356 1.55481C10.0441 1.11395 9.89461 0.942649 9.46388 0.981087C8.85675 1.03606 8.10062 1.4307 7.64425 1.82802C7.85111 1.88553 8.08386 1.94146 8.29858 1.95736C8.63579 2.0002 8.99953 2.00596 9.32899 1.95667C9.5365 1.92561 10.0307 1.81695 10.0356 1.55481ZM4.87179 1.82628C4.37868 1.45208 3.51014 0.907777 2.86705 0.980938C2.76827 0.987589 2.65018 1.00343 2.59721 1.09085C1.93093 2.19021 4.02936 2.00295 4.44491 1.92578C4.59868 1.90101 4.72187 1.86907 4.87179 1.82628Z" fill="url(#paint0_linear_300_1655)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_300_1655" x1="0" y1="22.271" x2="0" y2="-4.9966" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        Бонусы</a></li>
+                    <li><a href="#">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_300_1683" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                                <rect width="16" height="16" fill="url(#paint0_linear_300_1683)"/>
+                            </mask>
+                            <g mask="url(#mask0_300_1683)">
+                                <path d="M4 14.6663C3.44444 14.6663 2.97222 14.4719 2.58333 14.083C2.19444 13.6941 2 13.2219 2 12.6663V10.6663H4V1.33301H14V12.6663C14 13.2219 13.8056 13.6941 13.4167 14.083C13.0278 14.4719 12.5556 14.6663 12 14.6663H4ZM12 13.333C12.1889 13.333 12.3472 13.2691 12.475 13.1413C12.6028 13.0136 12.6667 12.8552 12.6667 12.6663V2.66634H5.33333V10.6663H11.3333V12.6663C11.3333 12.8552 11.3972 13.0136 11.525 13.1413C11.6528 13.2691 11.8111 13.333 12 13.333ZM6 5.99967V4.66634H12V5.99967H6ZM6 7.99967V6.66634H12V7.99967H6Z" fill="url(#paint1_linear_300_1683)"/>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_300_1683" x1="0" y1="27.4104" x2="0" y2="-6.14967" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_300_1683" x1="2" y1="24.175" x2="2" y2="-3.79171" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        Контракты</a></li>
+                    <li><a href="#">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_300_1668" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                                <rect width="16" height="16" fill="url(#paint0_linear_300_1668)"/>
+                            </mask>
+                            <g mask="url(#mask0_300_1668)">
+                                <path d="M8.48333 11.5163C8.16111 11.1941 8 10.7997 8 10.333C8 9.86634 8.16111 9.4719 8.48333 9.14967C8.80556 8.82745 9.2 8.66634 9.66667 8.66634C10.1333 8.66634 10.5278 8.82745 10.85 9.14967C11.1722 9.4719 11.3333 9.86634 11.3333 10.333C11.3333 10.7997 11.1722 11.1941 10.85 11.5163C10.5278 11.8386 10.1333 11.9997 9.66667 11.9997C9.2 11.9997 8.80556 11.8386 8.48333 11.5163ZM3.33333 14.6663C2.96667 14.6663 2.65278 14.5358 2.39167 14.2747C2.13056 14.0136 2 13.6997 2 13.333V3.99967C2 3.63301 2.13056 3.31912 2.39167 3.05801C2.65278 2.7969 2.96667 2.66634 3.33333 2.66634H4V1.33301H5.33333V2.66634H10.6667V1.33301H12V2.66634H12.6667C13.0333 2.66634 13.3472 2.7969 13.6083 3.05801C13.8694 3.31912 14 3.63301 14 3.99967V13.333C14 13.6997 13.8694 14.0136 13.6083 14.2747C13.3472 14.5358 13.0333 14.6663 12.6667 14.6663H3.33333ZM3.33333 13.333H12.6667V6.66634H3.33333V13.333Z" fill="url(#paint1_linear_300_1668)"/>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_300_1668" x1="0" y1="27.4104" x2="0" y2="-6.14967" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_300_1668" x1="2" y1="24.175" x2="2" y2="-3.79171" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        Ежедневные</a></li>
+                    <li><a href="#">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_300_1658" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                                <rect width="16" height="16" fill="url(#paint0_linear_300_1658)"/>
+                            </mask>
+                            <g mask="url(#mask0_300_1658)">
+                                <path d="M12.6987 14.3999L10.7487 12.4666L9.28203 13.9333L8.81536 13.4666C8.55981 13.211 8.43203 12.8944 8.43203 12.5166C8.43203 12.1388 8.55981 11.8222 8.81536 11.5666L11.632 8.74993C11.8876 8.49438 12.2043 8.3666 12.582 8.3666C12.9598 8.3666 13.2765 8.49438 13.532 8.74993L13.9987 9.2166L12.532 10.6833L14.4654 12.6333C14.5987 12.7666 14.6654 12.9222 14.6654 13.0999C14.6654 13.2777 14.5987 13.4333 14.4654 13.5666L13.632 14.3999C13.4987 14.5333 13.3431 14.5999 13.1654 14.5999C12.9876 14.5999 12.832 14.5333 12.6987 14.3999ZM14.6654 3.93327L7.0987 11.4999L7.18203 11.5666C7.43759 11.8222 7.56536 12.1388 7.56536 12.5166C7.56536 12.8944 7.43759 13.211 7.18203 13.4666L6.71536 13.9333L5.2487 12.4666L3.2987 14.3999C3.16536 14.5333 3.00981 14.5999 2.83203 14.5999C2.65425 14.5999 2.4987 14.5333 2.36536 14.3999L1.53203 13.5666C1.3987 13.4333 1.33203 13.2777 1.33203 13.0999C1.33203 12.9222 1.3987 12.7666 1.53203 12.6333L3.46536 10.6833L1.9987 9.2166L2.46536 8.74993C2.72092 8.49438 3.03759 8.3666 3.41536 8.3666C3.79314 8.3666 4.10981 8.49438 4.36536 8.74993L4.43203 8.83327L11.9987 1.2666H14.6654V3.93327ZM4.63203 7.23327L1.33203 3.93327V1.2666H3.9987L7.2987 4.5666L4.63203 7.23327Z" fill="url(#paint1_linear_300_1658)"/>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_300_1658" x1="0" y1="27.4104" x2="0" y2="-6.14967" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_300_1658" x1="1.33203" y1="24.1086" x2="1.33203" y2="-3.85812" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#999999"/>
+                                    <stop offset="0.76" stop-color="white"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+
+                        PvP</a></li>
+                </ul>
+            </div>
+            <div class="footer__card">
+                <h4 class="footer__title">Дополнительная информация</h4>
+                <ul class="footer__links">
+                    <li><a href="contacts.html"><img src="images/explore.svg" alt="">Контакты</a></li>
+                    <li><a href="faq.html"><img src="images/live_help.png" alt="">FaQ</a></li>
+                    <li><a href="#"><img src="images/support.svg" alt="">Поддержка</a></li>
+                </ul>
+            </div>
+            <div class="footer__card">
+                <h4 class="footer__title">Контакты</h4>
+                <ul class="footer__links">
+                    <li><a href="tel:+79999999999"><img src="images/wifi_calling_bar_1.svg" alt="">+7 (999) 999 99-99</a></li>
+                    <li><a href="mailto:example@example.com"><img src="images/mail.svg" alt="">example@example.com</a></li>
+                </ul>
+                <div class="socials df">
+                    <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt=""></a>
+                    <a href="#" aria-label="YouTube"><img src="images/Vector.svg" alt=""></a>
+                    <a href="#" aria-label="Discord"><img src="images/Vector%20(1).svg" alt=""></a>
+                    <a href="#" aria-label="Twitch"><img src="images/twitch.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom df a-center">
+            <span>© 2026 Название  Сайта</span>
+            <a href="policy.html#privacy">Политика обработки персональных данных</a>
+            <a href="policy.html#consent">Согласие на обработку персональных данных</a>
+            <a href="policy.html#cookies">Cookies</a>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
